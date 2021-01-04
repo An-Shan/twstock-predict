@@ -5,11 +5,11 @@ import pandas as pd
 from datetime import datetime
 
 from keras.models import Sequential
-from keras.layers import Dense, Dropout, Activation, Flatten, LSTM, TimeDistributed, RepeatVector
+from keras.layers import Dense, LSTM, TimeDistributed
 from keras.layers.normalization import BatchNormalization
 from keras.optimizers import Adam
-from keras.callbacks import EarlyStopping, ModelCheckpoint
-import matplotlib.pyplot as plt
+from keras.callbacks import EarlyStopping
+# import matplotlib.pyplot as plt
 
 current_year = datetime.now().year
 current_month = datetime.now().month

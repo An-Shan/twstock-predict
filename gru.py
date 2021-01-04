@@ -2,8 +2,8 @@ import tensorflow as tf
 import tensorflow.compat.v1 as tf
 tf.disable_v2_behavior()
 import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
+# import matplotlib.pyplot as plt
+# import seaborn as sns
 import pandas as pd
 from sklearn.preprocessing import MinMaxScaler
 from datetime import datetime
@@ -11,7 +11,7 @@ from datetime import timedelta
 from tqdm import tqdm
 from tensorflow.python.framework import ops
 from sklearn.metrics import mean_squared_error
-sns.set()
+# sns.set()
 tf.compat.v1.random.set_random_seed(1234)
 
 
