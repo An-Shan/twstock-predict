@@ -9,11 +9,11 @@ flask = "*"
 psycopg2-binary = "*"
 pandas = "*"
 keras = "*"
-tensorflow = "*"
 sklearn = "*"
 tqdm = "*"
 sqlalchemy = "*"
 cython = "*"
+tensorflow = "==2.3.0"
 
 [dev-packages]
 
