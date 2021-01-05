@@ -16,7 +16,6 @@ cython = "*"
 scikit-learn = "==0.22.1"
 gunicorn = "*"
 numpy = "==1.19.3"
-tensorflow = "==2.2.0"
 pip = "*"
 
 [dev-packages]
