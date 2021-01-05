@@ -15,6 +15,7 @@ sqlalchemy = "*"
 cython = "*"
 scikit-learn = "==0.22.1"
 gunicorn = "*"
+numpy = "==1.19.3"
 
 [dev-packages]
 
