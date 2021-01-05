@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 from lstm import readTrain, augFeatures, normalize, buildTrain, splitData, shuffle\
 , buildManyToOneModel, buildOneToOneModel, buildManyToManyModel
-from gru import gru_predict_price
+# from gru import gru_predict_price
 from sklearn.metrics import mean_squared_error
 # from k_line import draw_k_line, draw_kd_line, draw_volume
 
@@ -105,11 +105,11 @@ def get_high_low_prediction(df_Stock, model_type = 'OtO' ):
         OtO_price_l, mse_l = predict_price(df_Stock, 'OtO', 'low', 1, 1)
         print(OtO_price_l, ' - ', OtO_price_h ,'\n', mse_l ,' - ',mse_h)
         return round(OtO_price_h, 2), round(OtO_price_l, 2)
-    else :
-        GRU_price_h, mse_h = gru_predict_price(df_Stock, 'high')
-        GRU_price_l, mse_l = gru_predict_price(df_Stock, 'low')
-        print(GRU_price_l, ' - ',GRU_price_h ,'\n', mse_l ,' - ',mse_h)
-        return round(GRU_price_h,2), round(GRU_price_l, 2)
+    # else :
+    #     GRU_price_h, mse_h = gru_predict_price(df_Stock, 'high')
+    #     GRU_price_l, mse_l = gru_predict_price(df_Stock, 'low')
+    #     print(GRU_price_l, ' - ',GRU_price_h ,'\n', mse_l ,' - ',mse_h)
+    #     return round(GRU_price_h,2), round(GRU_price_l, 2)
 
 
 def get_mean_square_error(model, model_type, X_test, Y_test):
