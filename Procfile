@@ -1,1 +1,1 @@
-web: gunicorn main:app
+web: pipenv run python main.py
